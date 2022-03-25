@@ -9,7 +9,8 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            Francisco Souza
+            {/*repare no espaco em branco antes do nome; indentacao shift+alt+f*/}
+            &nbsp; Francisco de Souza Filho (github.com/fransoufil)
           </a>
         </p>
         <p className="text-light">
@@ -22,7 +23,7 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              @devsuperior.ig
+              &nbsp; @devsuperior.ig
             </a>
           </small>
         </p>

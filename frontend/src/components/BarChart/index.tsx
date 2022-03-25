@@ -23,7 +23,9 @@ const BarChart = () => {
     };
 
     return (
-      <Chart 
+      <Chart
+      {/*o tres pontos significam pegue tudo do options e permita acrescentar mais elementos*/}
+      {/*o xaxis significa o eixo x*/} 
         options={{...options, xaxis: mockData.labels}}
         series={mockData.series}
         type="bar"
