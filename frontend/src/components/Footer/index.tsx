@@ -9,7 +9,6 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            {/*repare no espaco em branco antes do nome; indentacao shift+alt+f*/}
             &nbsp; Francisco de Souza Filho (github.com/fransoufil)
           </a>
         </p>

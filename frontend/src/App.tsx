@@ -7,10 +7,9 @@ import DonutChart from "components/DonutChart";
 function App() {
   return (
     <>
-    {/*o componente NavBar esta inserido no inicio, mas poderia estar no meio - p.e. sendo outro componente ou ser replicado*/}
       <NavBar />
       <div className="container">
-        <h1 className="text-primary py-3">Dashboard de Vendas</h1>
+        <h1 className="text-primary py-3">Dashboard de Vendas (mock)</h1>
 
         <div className="row px-3">
           <div className="col-sm-6">
