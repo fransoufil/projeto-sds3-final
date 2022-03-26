@@ -83,6 +83,15 @@ const DataTable = () => {
             <td>15017.00</td>
           </tr>
         </tbody>
+        <tfoot>
+          <tr>
+            <th>Data</th>
+            <th>Vendedor</th>
+            <th>Clientes visitados</th>
+            <th>Negócios fechados</th>
+            <th>Valor</th>
+          </tr>
+        </tfoot>
       </table>
     </div>
   );
