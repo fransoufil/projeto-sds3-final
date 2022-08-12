@@ -13,11 +13,15 @@ function App() {
 
         <div className="row px-3">
           <div className="col-sm-6">
-            <h5 className="text-center text-secondary">Taxa de Sucesso - Barras Verticais (%)</h5>
+            <h5 className="text-center text-secondary">
+              Taxa de Sucesso - Barras Verticais (%)
+            </h5>
             <BarChart />
           </div>
           <div className="col-sm-6">
-            <h5 className="text-center text-secondary">Taxa de Sucesso - Forma de Donut (%)</h5>
+            <h5 className="text-center text-secondary">
+              Taxa de Sucesso - Forma de Donut (%)
+            </h5>
             <DonutChart />
           </div>
 
