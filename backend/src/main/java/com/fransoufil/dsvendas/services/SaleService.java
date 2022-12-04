@@ -19,7 +19,7 @@ import com.fransoufil.dsvendas.repositories.SellerRepository;
 public class SaleService {
 	
 	@Autowired
-	private SaleRepository repository;
+	private SaleRepository saleRepository;
 	
 	//solução simples para evitar a consulta repetida: serve quando são poucos os parâmetros, no caso, apenas 5 vendedores
 	@Autowired
@@ -28,18 +28,18 @@ public class SaleService {
 	@Transactional(readOnly = true)
 	public Page<SaleDTO> findAll(Pageable pageable){
 		sellerRepository.findAll();
-		Page<Sale> result =  repository.findAll(pageable);
-		return result.map(x -> new SaleDTO(x));
+		Page<Sale> result =  saleRepository.findAll(pageable);
+		return result.map(SaleDTO::new);
 	}
 	
 	@Transactional(readOnly = true)
 	public List<SaleSumDTO> amountGroupBySeller() {
-		return repository.amountGroupBySeller();
+		return saleRepository.amountGroupBySeller();
 	}
 	
 	@Transactional(readOnly = true)
 	public List<SaleSuccessDTO> successGroupBySeller() {
-		return repository.successGroupBySeller();
+		return saleRepository.successGroupBySeller();
 	}
 }
 
